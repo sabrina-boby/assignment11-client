@@ -96,11 +96,11 @@ export const NotificationProvider = ({ children }) => {
     // Simulate booking confirmation notification
     const simulateBookingNotification = () => {
       const messages = [
-        "Your booking has been confirmed! 🎉",
-        "New tutor available in your preferred language! 🌟",
-        "Don't forget about your upcoming session! ⏰",
-        "Your review has been published! 📝",
-        "Welcome to Language Exchange! 🚀"
+        "Your booking has been confirmed!",
+        "New tutor available in your preferred language!",
+        "Don't forget about your upcoming session!",
+        "Your review has been published!",
+        "Welcome to Language Exchange!"
       ];
       
       const randomMessage = messages[Math.floor(Math.random() * messages.length)];
