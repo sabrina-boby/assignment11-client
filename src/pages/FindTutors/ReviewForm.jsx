@@ -56,7 +56,7 @@ const ReviewForm = ({ tutorId, onReviewSubmitted }) => {
         // Add notification
         addNotification({
           type: 'success',
-          title: 'Review Published! 📝',
+          title: 'Review Published!',
           message: 'Your review has been published and will help other students!',
           action: 'view'
         });

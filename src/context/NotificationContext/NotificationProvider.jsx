@@ -106,7 +106,7 @@ export const NotificationProvider = ({ children }) => {
       const randomMessage = messages[Math.floor(Math.random() * messages.length)];
       
       addNotification({
-        type: 'info',
+        type: 'success',
         title: 'System Update',
         message: randomMessage,
         action: 'view'
