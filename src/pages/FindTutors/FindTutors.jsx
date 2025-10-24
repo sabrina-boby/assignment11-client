@@ -14,7 +14,7 @@ const FindTutors = () => {
   });
 
   useEffect(() => {
-    fetch(`http://localhost:3000/tutorials`)
+    fetch(`https://assigment-11-server-nu.vercel.app/tutorials`)
       .then((res) => res.json())
       .then((data) => {
         setTutors(data);

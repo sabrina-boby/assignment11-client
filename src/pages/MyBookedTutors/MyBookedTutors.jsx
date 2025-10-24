@@ -8,7 +8,7 @@ const MyBookedTutors = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:3000/bookings?email=${user.email}`,
+      `https://assigment-11-server-nu.vercel.app/bookings?email=${user.email}`,
       {
         headers: {
           Authorization: `Bearer ${user?.accessToken}`,

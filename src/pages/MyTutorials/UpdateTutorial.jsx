@@ -11,7 +11,7 @@ const UpdateTutorial = () => {
   const [tutorials, setTutorials] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:3000/tutorials/${id}`)
+    fetch(`https://assigment-11-server-nu.vercel.app/tutorials/${id}`)
       .then((res) => res.json())
       .then((data) => setTutorials(data));
   }, [id]);
@@ -29,7 +29,7 @@ const UpdateTutorial = () => {
 
     axios
       .put(
-        `http://localhost:3000/tutorials/${id}`,
+        `https://assigment-11-server-nu.vercel.app/tutorials/${id}`,
         updatedTutorial
       )
       .then((res) => {

@@ -6,7 +6,7 @@ const FindTutorsByLanguage = () => {
   const { language } = useParams();
   const [tutors, setTutors] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:3000/tutorials/category/${language}`)
+    fetch(`https://assigment-11-server-nu.vercel.app/tutorials/category/${language}`)
       .then((res) => res.json())
       .then((data) => setTutors(data));
   }, []);

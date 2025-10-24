@@ -15,7 +15,7 @@ const MyTutorialCard = ({ tutorial, refreshTutorials }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete(`http://localhost:3000/tutorials/${tutorial._id}`)
+          .delete(`https://assigment-11-server-nu.vercel.app/tutorials/${tutorial._id}`)
           .then(() => {
             Swal.fire("Deleted!", "The tutorial has been deleted.", "success");
             refreshTutorials();

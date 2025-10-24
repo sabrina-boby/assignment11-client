@@ -6,7 +6,7 @@ const MyBookedCard = ({ booking }) => {
   // Handle review button click
   const handleReview = (tutorId) => {
     axios
-      .patch(`http://localhost:3000/tutorials/${tutorId}/review`)
+      .patch(`https://assigment-11-server-nu.vercel.app/tutorials/${tutorId}/review`)
       .then((res) => {
         if (res.data.modifiedCount > 0) {
           Swal.fire("Review Added!", "", "success");

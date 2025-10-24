@@ -11,7 +11,7 @@ const States = () => {
   });
 
   useEffect(() => {
-    axios.get("http://localhost:3000/tutorials").then((res) => {
+    axios.get("https://assigment-11-server-nu.vercel.app/tutorials").then((res) => {
       const tutorials = res.data;
       const tutorCount = tutorials.length;
       const reviewCount = tutorials.reduce(

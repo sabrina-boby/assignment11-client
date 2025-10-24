@@ -24,7 +24,7 @@ const AddTutorials = () => {
   //  console.log("=> ",formData)
     axios
       .post(
-        `http://localhost:3000/tutorials`,
+        `https://assigment-11-server-nu.vercel.app/tutorials`,
         formData,
         {
           headers: {

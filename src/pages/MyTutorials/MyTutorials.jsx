@@ -12,7 +12,7 @@ const MyTutorials = () => {
   const refreshTutorials = () => {
     setLoading(true); // Start loading
     fetch(
-      `http://localhost:3000/tutorials?email=${user.email}`,
+      `https://assigment-11-server-nu.vercel.app/tutorials?email=${user.email}`,
       {
         headers: {
           Authorization: `Bearer ${user?.accessToken}`,

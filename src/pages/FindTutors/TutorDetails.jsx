@@ -17,7 +17,7 @@ const TutorDetails = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:3000/tutorials/${id}`,
+      `https://assigment-11-server-nu.vercel.app/tutorials/${id}`,
       {
         headers: {
           Authorization: `Bearer ${user?.accessToken}`,
@@ -43,7 +43,7 @@ const TutorDetails = () => {
 
     axios
       .post(
-        "http://localhost:3000/bookings",
+        "https://assigment-11-server-nu.vercel.app/bookings",
         bookingData
       )
       .then((res) => {
@@ -76,7 +76,7 @@ const TutorDetails = () => {
     setReviewRefreshTrigger(prev => prev + 1);
     // Refresh tutor data to show updated ratings
     fetch(
-      `http://localhost:3000/tutorials/${id}`,
+      `https://assigment-11-server-nu.vercel.app/tutorials/${id}`,
       {
         headers: {
           Authorization: `Bearer ${user?.accessToken}`,

@@ -27,7 +27,7 @@ const ReviewForm = ({ tutorId, onReviewSubmitted }) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://localhost:3000/reviews', {
+      const response = await fetch('https://assigment-11-server-nu.vercel.app/reviews', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

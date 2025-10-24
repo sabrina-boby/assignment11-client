@@ -13,7 +13,7 @@ const ReviewList = ({ tutorId, refreshTrigger }) => {
 
   const fetchReviews = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/reviews/${tutorId}`);
+      const response = await fetch(`https://assigment-11-server-nu.vercel.app/reviews/${tutorId}`);
       if (response.ok) {
         const data = await response.json();
         setReviews(data);
@@ -31,7 +31,7 @@ const ReviewList = ({ tutorId, refreshTrigger }) => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3000/reviews/${reviewId}`, {
+      const response = await fetch(`https://assigment-11-server-nu.vercel.app/reviews/${reviewId}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${user.accessToken}`
